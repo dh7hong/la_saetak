@@ -24,6 +24,7 @@ interface Address {
 }
 
 const AddressList: React.FC = () => {
+	
 	const [addresses, setAddresses] = useState<Address[]>([]);
 	const [showDeleteModal, setShowDeleteModal] =
 		useState<boolean>(false);
