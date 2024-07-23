@@ -38,7 +38,11 @@ const MainView: React.FC = () => {
 	};
 
 	const viewCoinLaundryNearby = () => {
-		router.push("/viewMap/viewMapSelectedAddress");
+		if (shippingAddress === "배송지를 입력해주세요") {
+			router.push("/viewMap/viewMapCurrentAddress");
+		} else if (shippingAddress !== "배송지를 입력해주세요") {
+			router.push("/viewMap/viewMapSelectedAddress");
+		}
 	};
 
 	return (

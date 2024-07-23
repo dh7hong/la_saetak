@@ -182,7 +182,7 @@ const MapWithSearch: React.FC = () => {
 			typeof document !== "undefined"
 		) {
 			loadScript(
-				`https://dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}&libraries=services&autoload=false`,
+				`https://dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_REST_K}&libraries=services&autoload=false`,
 				() => {
 					console.log("Kakao Maps script loaded.");
 					initializeMap();
