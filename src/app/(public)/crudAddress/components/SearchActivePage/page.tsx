@@ -81,7 +81,7 @@ const SearchActivePage: FC = () => {
 						analyze_type: "similar",
 					},
 					headers: {
-						Authorization: `KakaoAK ${process.env.KAKAO_REST_API_K}`,
+						Authorization: `KakaoAK ${process.env.NEXT_PUBLIC_KAKAO_REST_API_KEY}`,
 						"Content-Type": "application/json; charset=utf-8",
 					},
 				}
